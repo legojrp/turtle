@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cpih8cmtt781t"]
+
+[ext_resource type="Texture2D" uid="uid://c32m45igl8wry" path="res://src/resources/placeholder sprite.png" id="1_lmaw1"]
+[ext_resource type="Script" path="res://src/turtle.gd" id="2_rk010"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1hv7i"]
+size = Vector2(201, 206)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-4, -116)
+texture = ExtResource("1_lmaw1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5.5, -116)
+shape = SubResource("RectangleShape2D_1hv7i")
+script = ExtResource("2_rk010")
