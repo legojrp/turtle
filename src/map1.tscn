@@ -393,16 +393,16 @@ position = Vector2(-51, -541)
 position = Vector2(-26, -230)
 
 [node name="crab2" parent="beach_plastic/crabs" instance=ExtResource("8_4b5w4")]
-position = Vector2(16, -239)
+position = Vector2(20, -237)
 
 [node name="crab3" parent="beach_plastic/crabs" instance=ExtResource("8_4b5w4")]
-position = Vector2(1, -274)
+position = Vector2(-33, -279)
 
 [node name="crab4" parent="beach_plastic/crabs" instance=ExtResource("8_4b5w4")]
-position = Vector2(-21, -298)
+position = Vector2(15, -282)
 
 [node name="crab5" parent="beach_plastic/crabs" instance=ExtResource("8_4b5w4")]
-position = Vector2(-30, -260)
+position = Vector2(-23, -254)
 
 [node name="crab6" parent="beach_plastic/crabs" instance=ExtResource("8_4b5w4")]
 position = Vector2(-47, -446)

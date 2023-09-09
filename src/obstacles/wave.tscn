@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dr8q3wl2lcgsh"]
+
+[ext_resource type="Texture2D" uid="uid://cschy4dbwevw3" path="res://src/resources/wave.png" id="1_8yy2b"]
+[ext_resource type="Script" path="res://src/obstacles/wave.gd" id="1_sggr5"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_sggr5")
+
+[node name="Wave" type="Sprite2D" parent="."]
+position = Vector2(1, -8)
+texture = ExtResource("1_8yy2b")
