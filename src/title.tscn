@@ -2,7 +2,8 @@
 
 [ext_resource type="Script" path="res://src/title.gd" id="1_6offt"]
 [ext_resource type="Script" path="res://src/Label.gd" id="2_lk1n6"]
-[ext_resource type="Texture2D" uid="uid://b71u5tct0w21d" path="res://src/resources/ljf;nwratbjsdfbglsja.png" id="3_j0aak"]
+[ext_resource type="Texture2D" uid="uid://b71u5tct0w21d" path="res://src/resources/title.png" id="3_j0aak"]
+
 
 [sub_resource type="Theme" id="Theme_2ipdn"]
 

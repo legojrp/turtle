@@ -1,7 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://c5inqrf20e3q7"]
+[gd_scene load_steps=3 format=3 uid="uid://c5inqrf20e3q7"]
 
 [ext_resource type="PackedScene" uid="uid://bw0xe2s26do2o" path="res://src/turtle.tscn" id="1_g1j2d"]
+[ext_resource type="PackedScene" uid="uid://crrsvdin4tp1t" path="res://src/plastic.tscn" id="2_0k0sy"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="turtle" parent="." instance=ExtResource("1_g1j2d")]
+position = Vector2(45, 31)
+
+[node name="plastic" parent="." instance=ExtResource("2_0k0sy")]
+position = Vector2(30, 51)
+metadata/Plastic = ""

@@ -1,41 +1,22 @@
 ea4bc82a6ad023ab7ee23ee620429895
-<<<<<<< Updated upstream
-::res://::1694221700
-export_presets.cfg::TextFile::-1::1694216124::0::1::::<><>::
-icon.svg::CompressedTexture2D::7624264073905203946::1694216124::1694216208::1::::<><>::
-testforJohn.tscn::PackedScene::6895840494049423744::1694221700::0::1::::<><>::
-::res://src/::1694221700
-level.tscn::PackedScene::2212585707979186124::1694221700::0::1::::<><>::uid://bw0xe2s26do2o::::res://src/turtle.tscn<>uid://6hkt7j7m3jvy::::res://src/resources/sand.png<>uid://cajl2oko01lka::::res://src/resources/water.png<>uid://bo6pfaus3f0un::::res://src/resources/shore.png
-Label.gd::GDScript::-1::1694220913::0::1::::<>Label<>::
-title.gd::GDScript::-1::1694221617::0::1::::<>Node2D<>::
-title.tscn::PackedScene::3936015726896523972::1694221700::0::1::::<><>::res://src/title.gd<>res://src/Label.gd
-turtle.gd::GDScript::-1::1694216124::0::1::::<>CollisionShape2D<>::
-turtle.tscn::PackedScene::3983589768795807428::1694221700::0::1::::<><>::uid://btmet8a3qbq0h::::res://src/resources/turtle.png
-::res://src/resources/::1694221745
-ljf;nwratbjsdfbglsja.png::CompressedTexture2D::4687406417319007491::1694221745::1694221745::1::::<><>::
-placeholder sprite.png::CompressedTexture2D::6794649168894737322::1694216124::1694216124::1::::<><>::
-plastic.png::CompressedTexture2D::106813973910617194::1694216124::1694216124::1::::<><>::
-sand.png::CompressedTexture2D::2190947593190805606::1694216124::1694216124::1::::<><>::
-shore.png::CompressedTexture2D::3433979920613998401::1694216124::1694216124::1::::<><>::
-turtle.png::CompressedTexture2D::3745059778483879201::1694216124::1694216124::1::::<><>::
-water.png::CompressedTexture2D::4792137621974088864::1694216124::1694216124::1::::<><>::
-wave.png::CompressedTexture2D::6040838714268571836::1694216124::1694216124::1::::<><>::
-=======
-::res://::1694220933
+::res://::1694222385
 export_presets.cfg::TextFile::-1::1694207892::0::1::::<><>::
 icon.svg::CompressedTexture2D::7624264073905203946::1694029978::1694029985::1::::<><>::
-testforJohn.tscn::PackedScene::6895840494049423744::1694220814::0::1::::<><>::
-::res://src/::1694220814
-level.tscn::PackedScene::2212585707979186124::1694220814::0::1::::<><>::uid://bw0xe2s26do2o::::res://src/turtle.tscn<>uid://6hkt7j7m3jvy::::res://src/resources/sand.png<>uid://cajl2oko01lka::::res://src/resources/water.png<>uid://bo6pfaus3f0un::::res://src/resources/shore.png
-turtle copy.gd::GDScript::-1::1694220433::0::1::::<>CollisionShape2D<>::
-turtle.gd::GDScript::-1::1694220814::0::1::::<>CollisionShape2D<>::
-turtle.tscn::PackedScene::3983589768795807428::1694220814::0::1::::<><>::uid://btmet8a3qbq0h::::res://src/resources/turtle.png
-::res://src/resources/::1694209881
+::res://src/::1694222385
+Label.gd::GDScript::-1::1694221996::0::1::::<>Label<>::
+level.tscn::PackedScene::2212585707979186124::1694221015::0::1::::<><>::uid://bw0xe2s26do2o::::res://src/turtle.tscn<>uid://6hkt7j7m3jvy::::res://src/resources/sand.png<>uid://cajl2oko01lka::::res://src/resources/water.png<>uid://bo6pfaus3f0un::::res://src/resources/shore.png
+testforJohn.tscn::PackedScene::6895840494049423744::1694222019::0::1::::<><>::uid://bw0xe2s26do2o::::res://src/turtle.tscn
+title.gd::GDScript::-1::1694221996::0::1::::<>Node2D<>::
+title.tscn::PackedScene::3936015726896523972::1694222385::0::1::::<><>::res://src/title.gd<>res://src/Label.gd<>uid://b71u5tct0w21d::::res://src/resources/title.png
+turtle copy.gd::GDScript::-1::1694222019::0::1::::<>CollisionShape2D<>::
+turtle.gd::GDScript::-1::1694222019::0::1::::<>CharacterBody2D<>::
+turtle.tscn::PackedScene::3983589768795807428::1694222019::0::1::::<><>::res://src/turtle.gd<>uid://btmet8a3qbq0h::::res://src/resources/turtle.png
+::res://src/resources/::1694222385
 placeholder sprite.png::CompressedTexture2D::6794649168894737322::1694089632::1694089653::1::::<><>::
 plastic.png::CompressedTexture2D::106813973910617194::1694207518::1694208087::1::::<><>::
 sand.png::CompressedTexture2D::2190947593190805606::1694207518::1694208084::1::::<><>::
 shore.png::CompressedTexture2D::3433979920613998401::1694207518::1694208081::1::::<><>::
+title.png::CompressedTexture2D::4687406417319007491::1694221996::1694222385::1::::<><>::
 turtle.png::CompressedTexture2D::3745059778483879201::1694207518::1694209881::1::::<><>::
 water.png::CompressedTexture2D::4792137621974088864::1694207518::1694208077::1::::<><>::
 wave.png::CompressedTexture2D::6040838714268571836::1694207518::1694207521::1::::<><>::
->>>>>>> Stashed changes

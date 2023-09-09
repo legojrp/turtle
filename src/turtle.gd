@@ -18,4 +18,13 @@ func _physics_process(delta):
 			velocity.x -= 1
 		if Input.is_action_pressed("D"):
 			velocity.x += 1
-	move_and_slide()
+	
+	var collision = move_and_collide(velocity * delta)
+	if collision:
+		var collider = collision.get_collider()
+		if collider.has_meta("Plastic"):
+			death()
+
+
+func death():
+	print("death")

@@ -17,3 +17,4 @@ texture = ExtResource("2_d7pp8")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, -8)
 shape = SubResource("RectangleShape2D_lwhnj")
+metadata/Plastic = "plastic"
