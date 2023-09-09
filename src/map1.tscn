@@ -1,7 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://dxc6xlsij3oau"]
+[gd_scene load_steps=10 format=3 uid="uid://dxc6xlsij3oau"]
 
+[ext_resource type="Texture2D" uid="uid://d3vfnfyyqnqrr" path="res://src/resources/ocean.png" id="1_86mjy"]
 [ext_resource type="PackedScene" uid="uid://bw0xe2s26do2o" path="res://src/turtle/turtle.tscn" id="1_ipdlp"]
-[ext_resource type="Texture2D" uid="uid://6hkt7j7m3jvy" path="res://src/resources/sand.png" id="2_0sbuh"]
+[ext_resource type="PackedScene" uid="uid://cwalstml2ruru" path="res://src/obstacles/plastic.tscn" id="3_cca0r"]
+[ext_resource type="Texture2D" uid="uid://m4jssmcpj32p" path="res://src/resources/sansss.png" id="3_xj76u"]
+[ext_resource type="Texture2D" uid="uid://cnnguovvlcno2" path="res://src/resources/beachssss.png" id="5_otxks"]
+[ext_resource type="Texture2D" uid="uid://bwebs58vgxjgx" path="res://src/resources/chess.png" id="6_fapd6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d8nwa"]
 size = Vector2(20, 254)
@@ -9,28 +13,92 @@ size = Vector2(20, 254)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4msqr"]
 size = Vector2(20, 256)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8j424"]
+size = Vector2(111.876, 20)
+
 [node name="map1" type="Node2D"]
+
+[node name="Node2D2" type="Node2D" parent="."]
+position = Vector2(32, -993)
+rotation = 3.14159
+
+[node name="Ocean" type="Sprite2D" parent="Node2D2"]
+position = Vector2(32, 32)
+texture = ExtResource("1_86mjy")
+
+[node name="Ocean2" type="Sprite2D" parent="Node2D2"]
+position = Vector2(32, -96)
+rotation = 4.71239
+texture = ExtResource("1_86mjy")
+
+[node name="Ocean5" type="Sprite2D" parent="Node2D2"]
+position = Vector2(32, 160)
+rotation = 4.71239
+texture = ExtResource("1_86mjy")
+
+[node name="Ocean3" type="Sprite2D" parent="Node2D2"]
+position = Vector2(32, -224)
+texture = ExtResource("1_86mjy")
+
+[node name="Ocean4" type="Sprite2D" parent="Node2D2"]
+position = Vector2(32, -352)
+rotation = 4.71239
+texture = ExtResource("1_86mjy")
+
+[node name="Beachssss" type="Sprite2D" parent="Node2D2"]
+position = Vector2(32, -479)
+texture = ExtResource("5_otxks")
+
+[node name="Sansss" type="Sprite2D" parent="Node2D2"]
+position = Vector2(32, -607)
+rotation = 3.14159
+texture = ExtResource("3_xj76u")
+
+[node name="Sansss2" type="Sprite2D" parent="Node2D2"]
+position = Vector2(32, -735)
+texture = ExtResource("3_xj76u")
+
+[node name="Sansss3" type="Sprite2D" parent="Node2D2"]
+position = Vector2(32.9999, -863)
+rotation = -3.14159
+texture = ExtResource("3_xj76u")
+
+[node name="Sansss5" type="Sprite2D" parent="Node2D2"]
+position = Vector2(32.9999, -1119)
+rotation = -3.14159
+texture = ExtResource("3_xj76u")
+
+[node name="Sansss4" type="Sprite2D" parent="Node2D2"]
+position = Vector2(32, -991)
+texture = ExtResource("3_xj76u")
+
+[node name="Chess" type="Sprite2D" parent="Node2D2"]
+position = Vector2(32, 288)
+rotation = 3.14159
+texture = ExtResource("6_fapd6")
 
 [node name="turtle" parent="." instance=ExtResource("1_ipdlp")]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(0, -103)
-scale = Vector2(1.01297, 2.83742)
+scale = Vector2(1.19753, 5.96991)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(-74, -71)
+position = Vector2(-64, -70.134)
+scale = Vector2(1.05615, 0.999307)
 shape = SubResource("RectangleShape2D_d8nwa")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(74, -73)
+position = Vector2(64.2988, -73.033)
+scale = Vector2(1.07768, 0.999708)
 shape = SubResource("RectangleShape2D_4msqr")
 
-[node name="Sand3" type="Sprite2D" parent="."]
-position = Vector2(-170, -367)
-scale = Vector2(1.64342, 6.61668)
-texture = ExtResource("2_0sbuh")
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0.83505, 35.8464)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_8j424")
 
-[node name="Sand4" type="Sprite2D" parent="."]
-position = Vector2(170, -371)
-scale = Vector2(1.64342, 6.61668)
-texture = ExtResource("2_0sbuh")
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="plastic" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-31, -45)

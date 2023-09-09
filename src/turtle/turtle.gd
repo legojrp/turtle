@@ -31,5 +31,5 @@ func _physics_process(delta):
 		
 
 func death():
-	print("death")
+	get_tree().change_scene_to_file("res://src/Static_levels/try_again.tscn")
 
