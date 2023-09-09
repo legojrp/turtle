@@ -95,10 +95,164 @@ shape = SubResource("RectangleShape2D_4msqr")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(0.83505, 35.8464)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_8j424")
 
 [node name="Node2D" type="Node2D" parent="."]
+position = Vector2(-19, -30)
+metadata/_edit_group_ = true
 
 [node name="plastic" parent="Node2D" instance=ExtResource("3_cca0r")]
 position = Vector2(-31, -45)
+
+[node name="plastic2" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(66, -64)
+
+[node name="plastic3" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(36, -63)
+
+[node name="plastic4" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-6, -45)
+
+[node name="plastic5" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-1, -102)
+
+[node name="plastic6" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-33, -131)
+
+[node name="plastic7" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(20, -84)
+
+[node name="plastic8" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-25, -72)
+
+[node name="plastic9" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-31, -45)
+
+[node name="plastic10" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(66, -64)
+
+[node name="plastic11" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(53, -98)
+
+[node name="plastic12" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(20, -124)
+
+[node name="plastic13" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-18, -170)
+
+[node name="plastic14" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(53, -172)
+
+[node name="plastic15" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(46, -137)
+
+[node name="plastic16" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(23, -172)
+
+[node name="plastic17" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-9, -205)
+
+[node name="plastic18" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-34, -192)
+
+[node name="plastic19" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(59, -200)
+
+[node name="plastic20" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(29, -219)
+
+[node name="plastic21" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-35, -235)
+
+[node name="plastic22" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(62, -254)
+
+[node name="plastic23" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(32, -253)
+
+[node name="plastic24" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-10, -235)
+
+[node name="plastic25" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-25, -254)
+
+[node name="plastic26" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(40, -275)
+
+[node name="plastic27" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(69, -289)
+
+[node name="plastic28" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-6, -272)
+
+[node name="plastic29" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-25, -294)
+
+[node name="plastic30" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(23, -287)
+
+[node name="plastic31" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(30, -306)
+
+[node name="plastic32" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-6, -304)
+
+[node name="plastic33" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-29, -318)
+
+[node name="plastic34" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(32, -330)
+
+[node name="plastic35" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(51, -312)
+
+[node name="plastic36" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-4, -319)
+
+[node name="plastic37" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-36, -341)
+
+[node name="plastic38" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(41, -352)
+
+[node name="plastic39" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(68, -335)
+
+[node name="plastic40" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-11, -341)
+
+[node name="plastic41" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-31, -365)
+
+[node name="plastic42" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(70, -376)
+
+[node name="plastic43" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(36, -383)
+
+[node name="plastic44" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-6, -365)
+
+[node name="plastic45" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-26, -385)
+
+[node name="plastic46" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(71, -404)
+
+[node name="plastic47" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(41, -403)
+
+[node name="plastic48" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-1, -385)
+
+[node name="plastic49" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(4, -402)
+
+[node name="plastic50" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(62, -356)
+
+[node name="plastic51" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-28, -405)
+
+[node name="plastic52" parent="Node2D" instance=ExtResource("3_cca0r")]
+position = Vector2(-9, -414)
