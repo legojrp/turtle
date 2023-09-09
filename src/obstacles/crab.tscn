@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://da6k4hrdr0cur"]
+
+[ext_resource type="Texture2D" uid="uid://brfksavvhf7s0" path="res://src/resources/crabss.png" id="1_xdj8o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_71qe2"]
+size = Vector2(28, 19)
+
+[node name="crab" type="CharacterBody2D"]
+metadata/plastic = true
+
+[node name="Crabss" type="Sprite2D" parent="."]
+position = Vector2(1, -10)
+texture = ExtResource("1_xdj8o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -9.5)
+shape = SubResource("RectangleShape2D_71qe2")

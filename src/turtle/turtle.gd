@@ -18,18 +18,26 @@ func _physics_process(delta):
 			velocity.x -= 1
 		if Input.is_action_pressed("D"):
 			velocity.x += 1
+		if position.y > -510:
+			velocity *= 30
+		var collision = move_and_collide(velocity * delta)
+		if collision:
+			var collider = collision.get_collider()
+			if collider.has_meta("plastic"):
+				death()
+					
+	if position.y > -510:
+		velocity = Vector2(0,0)
 	
-	var collision = move_and_collide(velocity * delta)
-	if collision:
-		var collider = collision.get_collider()
-		if collider.has_meta("plastic"):
-			death()
-		
 	camera.global_position.x = 0
-			
+
+	if position.y < -1250:
+		win()
 
 		
 
 func death():
 	get_tree().change_scene_to_file("res://src/Static_levels/try_again.tscn")
 
+func win():
+	pass

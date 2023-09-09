@@ -10,7 +10,7 @@ position = Vector2(45, 31)
 motion_mode = 1
 
 [node name="plastic" parent="." instance=ExtResource("2_0k0sy")]
-position = Vector2(-29.7329, -78.6818)
+position = Vector2(41, -5)
 motion_mode = 1
-metadata/Plastic = true
 metadata/plastic = false
+metadata/Plastic = true
