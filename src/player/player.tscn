@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://cgo302tyqvr51"]
+
+[ext_resource type="Texture2D" uid="uid://b0w885f4ktxyt" path="res://src/resources/Norm_Turtle.png" id="1_j3vou"]
+[ext_resource type="Script" path="res://src/player/player.gd" id="1_uksps"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jbg2b"]
+size = Vector2(14, 17)
+
+[node name="player" type="CharacterBody2D"]
+script = ExtResource("1_uksps")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(29, 13.5)
+shape = SubResource("RectangleShape2D_jbg2b")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(29, 14)
+texture = ExtResource("1_j3vou")

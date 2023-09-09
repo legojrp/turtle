@@ -1,15 +1,6 @@
-<<<<<<< Updated upstream
-res://src/level.tscn
-res://src/turtle.tscn
-res://testforJohn.tscn
 res://src/title.tscn
-res://src/title.gd
-res://src/Label.gd
-=======
-res://src/turtle.gd
 res://src/level.tscn
-res://testforJohn.tscn
-res://src/turtle.tscn
-res://turtle2.tscn
-res://src/testforJohn.tscn
->>>>>>> Stashed changes
+res://src/title.gd
+res://src/player.tscn
+res://src/player/player.tscn
+res://src/player/player.gd
