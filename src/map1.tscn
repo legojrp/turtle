@@ -26,11 +26,11 @@ position = Vector2(74, -73)
 shape = SubResource("RectangleShape2D_4msqr")
 
 [node name="Sand3" type="Sprite2D" parent="."]
-position = Vector2(-171, -367)
+position = Vector2(-170, -367)
 scale = Vector2(1.64342, 6.61668)
 texture = ExtResource("2_0sbuh")
 
 [node name="Sand4" type="Sprite2D" parent="."]
-position = Vector2(171, -371)
+position = Vector2(170, -371)
 scale = Vector2(1.64342, 6.61668)
 texture = ExtResource("2_0sbuh")

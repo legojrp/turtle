@@ -1,3 +1,4 @@
+TileMap
 Button
 Label
 CollisionShape2D
@@ -9,5 +10,4 @@ CharacterBody2D
 RichTextLabel
 Node2D
 Node
-TileMap
 Area2D

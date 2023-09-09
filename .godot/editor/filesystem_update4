@@ -1,16 +1,16 @@
-res://src/title.tscn
-res://src/end.tscn
-res://src/title.gd
-res://src/map1.tscn
-res://src/level.tscn
-res://src/try_again.tscn
-res://src/try_again.gd
-res://src/turtle/title.tscn
-res://src/Static_levels/try_again.tscn
-res://src/Static_levels/title.tscn
-res://src/Static_levels/end.tscn
 res://src/Static_levels/try_again.gd
-res://src/Label.gd
 res://src/level.gd
 res://src/Static_levels/end.gd
+<<<<<<< Updated upstream
 res://src/testsss.tscn
+=======
+res://src/Label.gd
+res://src/player/player.gd
+res://src/Static_levels/title.gd
+res://src/turtle/turtle.gd
+res://src/Static_levels/title.tscn
+res://src/Static_levels/end.tscn
+res://src/map1.tscn
+res://src/level.tscn
+res://src/Static_levels/try_again.tscn
+>>>>>>> Stashed changes

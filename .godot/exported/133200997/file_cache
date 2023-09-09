@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 res://src/obstacles/plastic.tscn::ee45c6fe68ab2c5a4d16477beefad354::1694229222::res://.godot/exported/133200997/export-8aa37b36c10bc3abdfb2fcbacb653210-plastic.scn
 res://src/player/player.tscn::1ccbd73496a76048450c370d5e530377::1694229222::res://.godot/exported/133200997/export-e6d031b4b01e7311dce0bbd1f2b58226-player.scn
 res://src/Static_levels/end.tscn::a3d02d5fc78044a231bae6fe72a8ea31::1694277647::res://.godot/exported/133200997/export-c16f9d85e0b78dc5fe3c7457582b0207-end.scn
@@ -7,3 +8,14 @@ res://src/turtle/turtle.tscn::eca6220a72d5e002f1c7918e862be4d6::1694229222::res:
 res://src/level.tscn::4b5c273555c93cd5f235cde8f8bfea29::1694277647::res://.godot/exported/133200997/export-0f1dc4e9daee1b92640ea17130a73e3b-level.scn
 res://src/map1.tscn::ddafe5f0a448437697b84b6d7e3e6c06::1694277647::res://.godot/exported/133200997/export-826f74a81fd6abb0c55fb0f9ac8f29cf-map1.scn
 res://src/testforJohn.tscn::a228edaca245501c0ed6140eff6700b6::1694229222::res://.godot/exported/133200997/export-bf7eaf9a6080cf50e474282d670d0fc2-testforJohn.scn
+=======
+res://src/obstacles/plastic.tscn::ee45c6fe68ab2c5a4d16477beefad354::1694228850::res://.godot/exported/133200997/export-8aa37b36c10bc3abdfb2fcbacb653210-plastic.scn
+res://src/player/player.tscn::1ccbd73496a76048450c370d5e530377::1694228850::res://.godot/exported/133200997/export-e6d031b4b01e7311dce0bbd1f2b58226-player.scn
+res://src/Static_levels/end.tscn::a3d02d5fc78044a231bae6fe72a8ea31::1694277639::res://.godot/exported/133200997/export-c16f9d85e0b78dc5fe3c7457582b0207-end.scn
+res://src/Static_levels/title.tscn::48ebca8bf4ab77d487da5a3707ccbd6b::1694277639::res://.godot/exported/133200997/export-6d0abbf9331e4fdaff61912b4ed372a7-title.scn
+res://src/Static_levels/try_again.tscn::2f25e76577c387ecb1c140bdb524e54c::1694277639::res://.godot/exported/133200997/export-755678f4644d858fe34fa4b507f2d9d5-try_again.scn
+res://src/turtle/turtle.tscn::eca6220a72d5e002f1c7918e862be4d6::1694228850::res://.godot/exported/133200997/export-e57b5566896eff4b460e49055c1befa3-turtle.scn
+res://src/level.tscn::4b5c273555c93cd5f235cde8f8bfea29::1694277639::res://.godot/exported/133200997/export-0f1dc4e9daee1b92640ea17130a73e3b-level.scn
+res://src/map1.tscn::ddafe5f0a448437697b84b6d7e3e6c06::1694277639::res://.godot/exported/133200997/export-826f74a81fd6abb0c55fb0f9ac8f29cf-map1.scn
+res://src/testforJohn.tscn::a228edaca245501c0ed6140eff6700b6::1694228850::res://.godot/exported/133200997/export-bf7eaf9a6080cf50e474282d670d0fc2-testforJohn.scn
+>>>>>>> Stashed changes

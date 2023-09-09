@@ -12,7 +12,6 @@ func _physics_process(delta):
 	var start = get_node('Start')
 	if start.position.y >= 95:
 		start.position.y -= 5
-	var player = get_node("Sprite2D")
 	var walt = get_node("Walter")
 	walt.position.y -= 5
 	

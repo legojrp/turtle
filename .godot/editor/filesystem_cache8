@@ -1,4 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
+<<<<<<< Updated upstream
 ::res://::1694278601
 export_presets.cfg::TextFile::-1::1694216124::0::1::::<><>::
 icon.svg::CompressedTexture2D::7624264073905203946::1694216124::1694216208::1::::<><>::
@@ -42,3 +43,46 @@ try_again.tscn::PackedScene::7627832512290004959::1694278107::0::1::::<><>::res:
 ::res://src/turtle/::1694275963
 turtle.gd::GDScript::-1::1694228679::0::1::::<>CharacterBody2D<>::
 turtle.tscn::PackedScene::3983589768795807428::1694229222::0::1::::<><>::res://src/turtle/turtle.gd<>uid://btmet8a3qbq0h
+=======
+::res://::1694277182
+export_presets.cfg::TextFile::-1::1694207892::0::1::::<><>::
+icon.svg::CompressedTexture2D::7624264073905203946::1694029978::1694277183::1::::<><>::
+::res://src/::1694277149
+Label.gd::GDScript::-1::1694221996::0::1::::<>Label<>::
+level.gd::GDScript::-1::1694277149::0::1::::<>Node2D<>::
+level.tscn::PackedScene::2212585707979186124::1694277149::0::1::::<><>::res://src/level.gd<>uid://bw0xe2s26do2o::::res://src/turtle/turtle.tscn<>uid://6hkt7j7m3jvy::::res://src/resources/sand.png<>uid://cajl2oko01lka::::res://src/resources/water.png<>uid://bo6pfaus3f0un::::res://src/resources/shore.png
+map1.tscn::PackedScene::8779658116237698748::1694277149::0::1::::<><>::uid://bw0xe2s26do2o::::res://src/turtle/turtle.tscn<>uid://6hkt7j7m3jvy::::res://src/resources/sand.png
+testforJohn.tscn::PackedScene::6895840494049423744::1694228850::0::1::::<><>::uid://bw0xe2s26do2o::::res://src/turtle/turtle.tscn<>uid://cwalstml2ruru::::res://src/obstacles/plastic.tscn
+::res://src/crab/::1694228567
+::res://src/obstacles/::1694228850
+plastic.tscn::PackedScene::6317696975651502142::1694228850::0::1::::<><>::uid://br0hfnik05ri::::res://src/resources/plastic.png
+::res://src/player/::1694228850
+player.gd::GDScript::-1::1694227723::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::5224621887010732098::1694228850::0::1::::<><>::uid://b0w885f4ktxyt::::res://src/resources/Norm_Turtle.png<>res://src/player/player.gd
+::res://src/resources/::1694277149
+Angy_Turtle.png::CompressedTexture2D::8046238992232047880::1694227723::1694227723::1::::<><>::
+beach.png::CompressedTexture2D::184666626076855864::1694277149::1694277149::1::::<><>::
+Hank.png::CompressedTexture2D::7687382349636326559::1694277149::1694277149::1::::<><>::
+happyh.png::CompressedTexture2D::8511129688393472556::1694277149::1694277149::1::::<><>::
+happy_turtle.png::CompressedTexture2D::307909675318381899::1694277149::1694277149::1::::<><>::
+Norm_Turtle.png::CompressedTexture2D::4188622261949671863::1694227723::1694227723::1::::<><>::
+placeholder sprite.png::CompressedTexture2D::6794649168894737322::1694089632::1694089653::1::::<><>::
+plastic.png::CompressedTexture2D::106813973910617194::1694207518::1694208087::1::::<><>::
+sand.png::CompressedTexture2D::2190947593190805606::1694277149::1694208084::1::::<><>::
+shore.png::CompressedTexture2D::3433979920613998401::1694207518::1694208081::1::::<><>::
+title.png::CompressedTexture2D::4687406417319007491::1694227348::1694227348::1::::<><>::
+turtle.png::CompressedTexture2D::3745059778483879201::1694207518::1694209881::1::::<><>::
+walter.png::CompressedTexture2D::1802955170678801061::1694227723::1694227723::1::::<><>::
+water.png::CompressedTexture2D::4792137621974088864::1694207518::1694208077::1::::<><>::
+wave.png::CompressedTexture2D::6040838714268571836::1694207518::1694207521::1::::<><>::
+::res://src/Static_levels/::1694277149
+end.gd::GDScript::-1::1694277149::0::1::::<>Node2D<>::
+end.tscn::PackedScene::6410277328873171407::1694277149::0::1::::<><>::res://src/Static_levels/end.gd<>uid://cvpox2exdcdc::::res://src/resources/beach.png<>uid://dhr3cgfwrcjvr::::res://src/resources/Hank.png<>uid://0xmn46x4uio0::::res://src/resources/walter.png<>uid://enfhy3n2qjvn::::res://src/resources/happy_turtle.png<>uid://dti4cehtibdsu::::res://src/resources/happyh.png
+title.gd::GDScript::-1::1694277149::0::1::::<>Node2D<>::
+title.tscn::PackedScene::3936015726896523972::1694277149::0::1::::<><>::res://src/Static_levels/title.gd<>uid://b71u5tct0w21d::::res://src/resources/title.png<>uid://0xmn46x4uio0::::res://src/resources/walter.png<>uid://cgo302tyqvr51::::res://src/player/player.tscn<>res://src/Label.gd
+try_again.gd::GDScript::-1::1694277149::0::1::::<>Node2D<>::
+try_again.tscn::PackedScene::7627832512290004959::1694277149::0::1::::<><>::res://src/Static_levels/try_again.gd<>uid://cvpox2exdcdc::::res://src/resources/beach.png<>uid://dmvwm7amayf6w::::res://src/resources/Angy_Turtle.png
+::res://src/turtle/::1694228850
+turtle.gd::GDScript::-1::1694227348::0::1::::<>CharacterBody2D<>::
+turtle.tscn::PackedScene::3983589768795807428::1694228850::0::1::::<><>::res://src/turtle/turtle.gd<>uid://btmet8a3qbq0h::::res://src/resources/turtle.png
+>>>>>>> Stashed changes

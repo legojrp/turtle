@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+@onready var camera = get_node("Camera2D")
 var waterphyisics = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -24,7 +24,12 @@ func _physics_process(delta):
 		var collider = collision.get_collider()
 		if collider.has_meta("Plastic"):
 			death()
+	
+	camera.global_position.x = 0
+			
 
+		
 
 func death():
 	print("death")
+
