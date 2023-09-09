@@ -1,5 +1,2 @@
-res://src/turtle.gd
-res://src/plastic.tscn
 res://src/level.tscn
-res://src/testforJohn.tscn
-res://src/turtle.tscn
+res://src/title.tscn
