@@ -1,5 +1,6 @@
-[gd_scene load_steps=9 format=3 uid="uid://6r170vocwbo3"]
+[gd_scene load_steps=10 format=3 uid="uid://6r170vocwbo3"]
 
+[ext_resource type="Script" path="res://src/level.gd" id="1_5ad2p"]
 [ext_resource type="PackedScene" uid="uid://bw0xe2s26do2o" path="res://src/turtle/turtle.tscn" id="1_gs5lh"]
 [ext_resource type="Texture2D" uid="uid://6hkt7j7m3jvy" path="res://src/resources/sand.png" id="1_ih03p"]
 [ext_resource type="Texture2D" uid="uid://cajl2oko01lka" path="res://src/resources/water.png" id="2_l0b14"]
@@ -547,6 +548,7 @@ sources/1 = SubResource("TileSetAtlasSource_s4tas")
 sources/3 = SubResource("TileSetAtlasSource_0tddq")
 
 [node name="Level" type="Node2D"]
+script = ExtResource("1_5ad2p")
 
 [node name="turtle" parent="." instance=ExtResource("1_gs5lh")]
 position = Vector2(25, 29)

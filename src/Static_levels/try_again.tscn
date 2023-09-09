@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://dgw8j02yceb4b"]
+
+[ext_resource type="Script" path="res://src/Static_levels/try_again.gd" id="1_yhotn"]
+[ext_resource type="Texture2D" uid="uid://cvpox2exdcdc" path="res://src/resources/beach.png" id="2_rlqss"]
+[ext_resource type="Texture2D" uid="uid://dmvwm7amayf6w" path="res://src/resources/Angy_Turtle.png" id="3_gfq42"]
+
+[node name="try_again" type="Node2D"]
+script = ExtResource("1_yhotn")
+
+[node name="Beach" type="Sprite2D" parent="."]
+position = Vector2(64, 64)
+texture = ExtResource("2_rlqss")
+
+[node name="AngyTurtle" type="Sprite2D" parent="."]
+position = Vector2(10, 70)
+texture = ExtResource("3_gfq42")
+
+[node name="AngyTurtle2" type="Sprite2D" parent="."]
+position = Vector2(118, 70)
+texture = ExtResource("3_gfq42")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 24.0
+offset_top = 55.0
+offset_right = 105.0
+offset_bottom = 86.0
+text = "Try Again"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

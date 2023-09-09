@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://bwcvusgfmbnua"]
 
-[ext_resource type="Script" path="res://src/title.gd" id="1_6offt"]
-[ext_resource type="Script" path="res://src/Label.gd" id="2_lk1n6"]
-[ext_resource type="PackedScene" uid="uid://cgo302tyqvr51" path="res://src/player/player.tscn" id="3_1vcr7"]
-[ext_resource type="Texture2D" uid="uid://b71u5tct0w21d" path="res://src/resources/title.png" id="3_j0aak"]
-[ext_resource type="Texture2D" uid="uid://0xmn46x4uio0" path="res://src/resources/walter.png" id="5_fcjwv"]
+[ext_resource type="Script" path="res://src/Static_levels/title.gd" id="1_jqm3i"]
+[ext_resource type="Texture2D" uid="uid://b71u5tct0w21d" path="res://src/resources/title.png" id="2_qt3xk"]
+[ext_resource type="Texture2D" uid="uid://0xmn46x4uio0" path="res://src/resources/walter.png" id="3_fxdra"]
+[ext_resource type="PackedScene" uid="uid://cgo302tyqvr51" path="res://src/player/player.tscn" id="4_g7imr"]
+[ext_resource type="Script" path="res://src/Label.gd" id="5_a1yhs"]
 
 [sub_resource type="Theme" id="Theme_2ipdn"]
 
@@ -17,11 +17,11 @@ size = Vector2(23, 131)
 size = Vector2(128, 20)
 
 [node name="Title" type="Node2D"]
-script = ExtResource("1_6offt")
+script = ExtResource("1_jqm3i")
 
 [node name="background" type="Sprite2D" parent="."]
 position = Vector2(64, 64)
-texture = ExtResource("3_j0aak")
+texture = ExtResource("2_qt3xk")
 
 [node name="Start" type="Button" parent="."]
 offset_left = 39.0
@@ -33,9 +33,9 @@ text = "Start"
 [node name="Walter" type="Sprite2D" parent="."]
 position = Vector2(65, 606)
 scale = Vector2(0.391941, 0.350685)
-texture = ExtResource("5_fcjwv")
+texture = ExtResource("3_fxdra")
 
-[node name="player" parent="." instance=ExtResource("3_1vcr7")]
+[node name="player" parent="." instance=ExtResource("4_g7imr")]
 position = Vector2(13, 85)
 
 [node name="text_turtle" type="Label" parent="."]
@@ -84,7 +84,7 @@ have a fascinating evolutionary history and
 are of scientific and conservation significance
 due to their unique characteristics
                   and ecological roles."
-script = ExtResource("2_lk1n6")
+script = ExtResource("5_a1yhs")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 

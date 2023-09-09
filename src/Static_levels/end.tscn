@@ -1,0 +1,73 @@
+[gd_scene load_steps=8 format=3 uid="uid://cxlglixypfrfj"]
+
+[ext_resource type="Script" path="res://src/Static_levels/end.gd" id="1_v8mk1"]
+[ext_resource type="Texture2D" uid="uid://cvpox2exdcdc" path="res://src/resources/beach.png" id="2_kg4ms"]
+[ext_resource type="Texture2D" uid="uid://dhr3cgfwrcjvr" path="res://src/resources/Hank.png" id="3_fheic"]
+[ext_resource type="Texture2D" uid="uid://0xmn46x4uio0" path="res://src/resources/walter.png" id="4_tqhuy"]
+[ext_resource type="Texture2D" uid="uid://enfhy3n2qjvn" path="res://src/resources/happy_turtle.png" id="5_05qha"]
+[ext_resource type="Texture2D" uid="uid://dti4cehtibdsu" path="res://src/resources/happyh.png" id="6_5ciwg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bsnwb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_05qha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_05qha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5ciwg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5ciwg")
+}],
+"loop": true,
+"name": &"resources",
+"speed": 10.0
+}]
+
+[node name="end" type="Node2D"]
+script = ExtResource("1_v8mk1")
+
+[node name="Beach" type="Sprite2D" parent="."]
+position = Vector2(64, 64)
+texture = ExtResource("2_kg4ms")
+
+[node name="Hank" type="Sprite2D" parent="."]
+position = Vector2(-45, 50)
+scale = Vector2(0.158979, 0.152339)
+texture = ExtResource("3_fheic")
+
+[node name="Walter" type="Sprite2D" parent="."]
+position = Vector2(174, 50)
+scale = Vector2(0.145334, 0.155407)
+texture = ExtResource("4_tqhuy")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 19.0
+offset_top = 89.0
+offset_right = 107.0
+offset_bottom = 120.0
+text = "Play Again"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 28.0
+offset_right = 101.0
+offset_bottom = 26.0
+text = "You Win!!"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(9, 105)
+sprite_frames = SubResource("SpriteFrames_bsnwb")
+animation = &"resources"
+frame = 3
+frame_progress = 1.0
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(117, 105)
+sprite_frames = SubResource("SpriteFrames_bsnwb")
+animation = &"resources"
+frame_progress = 0.887749
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
