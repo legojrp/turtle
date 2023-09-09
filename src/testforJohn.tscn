@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c5inqrf20e3q7"]
 
-[ext_resource type="PackedScene" uid="uid://bw0xe2s26do2o" path="res://src/turtle.tscn" id="1_g1j2d"]
-[ext_resource type="PackedScene" uid="uid://crrsvdin4tp1t" path="res://src/plastic.tscn" id="2_0k0sy"]
+[ext_resource type="PackedScene" uid="uid://bw0xe2s26do2o" path="res://src/turtle/turtle.tscn" id="1_g1j2d"]
+[ext_resource type="PackedScene" uid="uid://cwalstml2ruru" path="res://src/obstacles/plastic.tscn" id="2_0k0sy"]
 
 [node name="Node2D" type="Node2D"]
 

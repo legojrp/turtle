@@ -1,13 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://bw0xe2s26do2o"]
 
-[ext_resource type="Script" path="res://src/turtle.gd" id="1_2j53q"]
+[ext_resource type="Script" path="res://src/turtle/turtle.gd" id="1_i3tl0"]
 [ext_resource type="Texture2D" uid="uid://btmet8a3qbq0h" path="res://src/resources/turtle.png" id="2_d7pp8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lwhnj"]
 size = Vector2(8, 10)
 
 [node name="turtle" type="CharacterBody2D"]
-script = ExtResource("1_2j53q")
+script = ExtResource("1_i3tl0")
 
 [node name="Turtle" type="Sprite2D" parent="."]
 position = Vector2(-1, -9)

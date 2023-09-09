@@ -1,2 +1,5 @@
 res://src/level.tscn
 res://src/title.tscn
+res://src/turtle.gd
+res://src/turtle.tscn
+res://src/testforJohn.tscn
