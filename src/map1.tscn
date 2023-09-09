@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dxc6xlsij3oau"]
+[gd_scene load_steps=12 format=3 uid="uid://dxc6xlsij3oau"]
 
 [ext_resource type="Texture2D" uid="uid://d3vfnfyyqnqrr" path="res://src/resources/ocean.png" id="1_86mjy"]
 [ext_resource type="PackedScene" uid="uid://bw0xe2s26do2o" path="res://src/turtle/turtle.tscn" id="1_ipdlp"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cnnguovvlcno2" path="res://src/resources/beachssss.png" id="5_otxks"]
 [ext_resource type="Texture2D" uid="uid://bwebs58vgxjgx" path="res://src/resources/chess.png" id="6_fapd6"]
 [ext_resource type="PackedScene" uid="uid://bq57mc4k8rl3l" path="res://src/obstacles/straw.tscn" id="7_h4503"]
+[ext_resource type="PackedScene" uid="uid://da6k4hrdr0cur" path="res://src/obstacles/crab.tscn" id="8_4b5w4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d8nwa"]
 size = Vector2(20, 254)
@@ -388,6 +389,33 @@ position = Vector2(-51, -541)
 
 [node name="crabs" type="Node2D" parent="beach_plastic"]
 
+[node name="crab" parent="beach_plastic/crabs" instance=ExtResource("8_4b5w4")]
+position = Vector2(-26, -230)
+
+[node name="crab2" parent="beach_plastic/crabs" instance=ExtResource("8_4b5w4")]
+position = Vector2(16, -239)
+
+[node name="crab3" parent="beach_plastic/crabs" instance=ExtResource("8_4b5w4")]
+position = Vector2(1, -274)
+
+[node name="crab4" parent="beach_plastic/crabs" instance=ExtResource("8_4b5w4")]
+position = Vector2(-21, -298)
+
+[node name="crab5" parent="beach_plastic/crabs" instance=ExtResource("8_4b5w4")]
+position = Vector2(-30, -260)
+
+[node name="crab6" parent="beach_plastic/crabs" instance=ExtResource("8_4b5w4")]
+position = Vector2(-47, -446)
+
+[node name="crab7" parent="beach_plastic/crabs" instance=ExtResource("8_4b5w4")]
+position = Vector2(-30, -480)
+
+[node name="crab8" parent="beach_plastic/crabs" instance=ExtResource("8_4b5w4")]
+position = Vector2(35, -461)
+
+[node name="crab10" parent="beach_plastic/crabs" instance=ExtResource("8_4b5w4")]
+position = Vector2(-6, -450)
+
 [node name="ocean_plastic" type="Node2D" parent="."]
 
 [node name="plastics" type="Node2D" parent="ocean_plastic"]
@@ -395,9 +423,63 @@ position = Vector2(-51, -541)
 [node name="plastic" parent="ocean_plastic/plastics" instance=ExtResource("3_cca0r")]
 position = Vector2(49, -562)
 
+[node name="plastic2" parent="ocean_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-3, -619)
+
+[node name="plastic3" parent="ocean_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-41, -657)
+
+[node name="plastic4" parent="ocean_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(42, -656)
+
+[node name="plastic5" parent="ocean_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-2, -686)
+
+[node name="plastic6" parent="ocean_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-40, -724)
+
+[node name="plastic7" parent="ocean_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(43, -723)
+
+[node name="plastic8" parent="ocean_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-2, -762)
+
+[node name="plastic9" parent="ocean_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-40, -800)
+
+[node name="plastic10" parent="ocean_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(43, -799)
+
 [node name="straws" type="Node2D" parent="ocean_plastic"]
 
 [node name="straw16" parent="ocean_plastic/straws" instance=ExtResource("7_h4503")]
 position = Vector2(52, -495)
 
 [node name="crabs" type="Node2D" parent="ocean_plastic"]
+
+[node name="crab11" parent="ocean_plastic/crabs" instance=ExtResource("8_4b5w4")]
+position = Vector2(38, -615)
+
+[node name="crab12" parent="ocean_plastic/crabs" instance=ExtResource("8_4b5w4")]
+position = Vector2(-4, -649)
+
+[node name="crab13" parent="ocean_plastic/crabs" instance=ExtResource("8_4b5w4")]
+position = Vector2(-42, -611)
+
+[node name="crab14" parent="ocean_plastic/crabs" instance=ExtResource("8_4b5w4")]
+position = Vector2(39, -691)
+
+[node name="crab15" parent="ocean_plastic/crabs" instance=ExtResource("8_4b5w4")]
+position = Vector2(-3, -725)
+
+[node name="crab16" parent="ocean_plastic/crabs" instance=ExtResource("8_4b5w4")]
+position = Vector2(-41, -687)
+
+[node name="crab17" parent="ocean_plastic/crabs" instance=ExtResource("8_4b5w4")]
+position = Vector2(40, -765)
+
+[node name="crab18" parent="ocean_plastic/crabs" instance=ExtResource("8_4b5w4")]
+position = Vector2(-2, -799)
+
+[node name="crab19" parent="ocean_plastic/crabs" instance=ExtResource("8_4b5w4")]
+position = Vector2(-40, -761)
