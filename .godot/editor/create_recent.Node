@@ -1,3 +1,6 @@
+Label
+RichTextLabel
+Button
 Node
 TileMap
 Area2D

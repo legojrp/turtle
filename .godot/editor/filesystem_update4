@@ -1,3 +1,6 @@
-res://src/turtle.tscn
 res://src/level.tscn
-res://src/turtle.gd
+res://src/turtle.tscn
+res://testforJohn.tscn
+res://src/title.tscn
+res://src/title.gd
+res://src/Label.gd

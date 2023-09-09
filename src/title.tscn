@@ -1,0 +1,71 @@
+[gd_scene load_steps=6 format=3 uid="uid://bwcvusgfmbnua"]
+
+[ext_resource type="Script" path="res://src/title.gd" id="1_6offt"]
+[ext_resource type="Script" path="res://src/Label.gd" id="2_lk1n6"]
+[ext_resource type="Texture2D" uid="uid://b71u5tct0w21d" path="res://src/resources/ljf;nwratbjsdfbglsja.png" id="3_j0aak"]
+
+[sub_resource type="Theme" id="Theme_2ipdn"]
+
+[sub_resource type="FontVariation" id="FontVariation_kqyik"]
+
+[node name="Title" type="Node2D"]
+script = ExtResource("1_6offt")
+
+[node name="Start" type="Button" parent="."]
+offset_left = 29.0
+offset_top = 550.0
+offset_right = 75.0
+offset_bottom = 581.0
+text = "Start"
+
+[node name="text_turtle" type="Label" parent="."]
+visibility_layer = 4
+custom_minimum_size = Vector2(50, 0)
+offset_left = 8.0
+offset_top = 165.0
+offset_right = 125.0
+offset_bottom = 539.0
+theme = SubResource("Theme_2ipdn")
+theme_override_fonts/font = SubResource("FontVariation_kqyik")
+theme_override_font_sizes/font_size = 5
+text = "A turtle is a type of reptile characterized by its 
+distinctive physical features, including a bony
+or cartilaginous shell that encases its body, a
+relatively short and stout build, and webbed
+feet or flippers. Turtles are members of the
+order Testudines and are known for their
+slow and deliberate movement both on land
+and in water. The most defining feature of a 
+turtle is its shell, which consists of two main
+parts: the upper portion called the carapace
+and the lower portion known as the plastron.
+The shell serves as a protective shield, 
+offering defense against predators and
+environmental hazards. Turtles are unique
+among reptiles in that they cannot retract
+their limbs or heads completely into their shells;
+instead, they have adapted to have various
+degrees of mobility within the shell. Turtles are
+a diverse group, with many different species
+inhabiting various environments, including
+terrestrial (land-dwelling), aquatic (water-
+dwelling), and semi-aquatic habitats. They have
+a wide range of diets, from herbivorous to
+omnivorous and carnivorous, depending on the
+species. Turtles are found on almost every
+continent and have adapted to a variety of
+ecosystems, from deserts to tropical rainforests
+to oceans. Turtles have been around for
+millions of years and are considered one of the
+oldest surviving reptile groups on Earth. They
+have a fascinating evolutionary history and
+are of scientific and conservation significance
+due to their unique characteristics
+                  and ecological roles."
+script = ExtResource("2_lk1n6")
+
+[node name="background" type="Sprite2D" parent="."]
+position = Vector2(64, 55)
+texture = ExtResource("3_j0aak")
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
