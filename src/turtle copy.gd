@@ -1,6 +1,7 @@
-extends CharacterBody2D
+extends CollisionShape2D
 
 var waterphyisics = false
+var velocity = Vector2.ZERO
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -18,4 +19,6 @@ func _physics_process(delta):
 			velocity.x -= 1
 		if Input.is_action_pressed("D"):
 			velocity.x += 1
+	
 	move_and_slide()
+	print(velocity)

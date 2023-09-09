@@ -1,17 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://bw0xe2s26do2o"]
+[gd_scene load_steps=4 format=3 uid="uid://bw0xe2s26do2o"]
 
+[ext_resource type="Script" path="res://src/turtle.gd" id="1_2j53q"]
 [ext_resource type="Texture2D" uid="uid://btmet8a3qbq0h" path="res://src/resources/turtle.png" id="2_d7pp8"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1hv7i"]
-size = Vector2(12, 14)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lwhnj"]
+size = Vector2(8, 10)
 
 [node name="turtle" type="CharacterBody2D"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, -9)
-shape = SubResource("RectangleShape2D_1hv7i")
+script = ExtResource("1_2j53q")
 
 [node name="Turtle" type="Sprite2D" parent="."]
 position = Vector2(-1, -9)
 scale = Vector2(0.913, 1)
 texture = ExtResource("2_d7pp8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -8)
+shape = SubResource("RectangleShape2D_lwhnj")

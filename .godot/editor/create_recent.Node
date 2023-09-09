@@ -1,9 +1,13 @@
+<<<<<<< Updated upstream
 Label
 RichTextLabel
 Button
+=======
+CharacterBody2D
+CollisionShape2D
+Node2D
+>>>>>>> Stashed changes
 Node
 TileMap
 Area2D
-CollisionShape2D
 Sprite2D
-CharacterBody2D
