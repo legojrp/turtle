@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dxc6xlsij3oau"]
+[gd_scene load_steps=11 format=3 uid="uid://dxc6xlsij3oau"]
 
 [ext_resource type="Texture2D" uid="uid://d3vfnfyyqnqrr" path="res://src/resources/ocean.png" id="1_86mjy"]
 [ext_resource type="PackedScene" uid="uid://bw0xe2s26do2o" path="res://src/turtle/turtle.tscn" id="1_ipdlp"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://m4jssmcpj32p" path="res://src/resources/sansss.png" id="3_xj76u"]
 [ext_resource type="Texture2D" uid="uid://cnnguovvlcno2" path="res://src/resources/beachssss.png" id="5_otxks"]
 [ext_resource type="Texture2D" uid="uid://bwebs58vgxjgx" path="res://src/resources/chess.png" id="6_fapd6"]
+[ext_resource type="PackedScene" uid="uid://bq57mc4k8rl3l" path="res://src/obstacles/straw.tscn" id="7_h4503"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d8nwa"]
 size = Vector2(20, 254)
@@ -17,63 +18,69 @@ size = Vector2(20, 256)
 size = Vector2(111.876, 20)
 
 [node name="map1" type="Node2D"]
+position = Vector2(-100, -26)
 
-[node name="Node2D2" type="Node2D" parent="."]
+[node name="background" type="Node2D" parent="."]
 position = Vector2(32, -993)
 rotation = 3.14159
 
-[node name="Ocean" type="Sprite2D" parent="Node2D2"]
+[node name="Ocean" type="Sprite2D" parent="background"]
 position = Vector2(32, 32)
 texture = ExtResource("1_86mjy")
 
-[node name="Ocean2" type="Sprite2D" parent="Node2D2"]
+[node name="Ocean2" type="Sprite2D" parent="background"]
 position = Vector2(32, -96)
 rotation = 4.71239
 texture = ExtResource("1_86mjy")
 
-[node name="Ocean5" type="Sprite2D" parent="Node2D2"]
+[node name="Ocean5" type="Sprite2D" parent="background"]
 position = Vector2(32, 160)
 rotation = 4.71239
 texture = ExtResource("1_86mjy")
 
-[node name="Ocean3" type="Sprite2D" parent="Node2D2"]
+[node name="Ocean3" type="Sprite2D" parent="background"]
 position = Vector2(32, -224)
 texture = ExtResource("1_86mjy")
 
-[node name="Ocean4" type="Sprite2D" parent="Node2D2"]
+[node name="Ocean4" type="Sprite2D" parent="background"]
 position = Vector2(32, -352)
 rotation = 4.71239
 texture = ExtResource("1_86mjy")
 
-[node name="Beachssss" type="Sprite2D" parent="Node2D2"]
+[node name="Beachssss" type="Sprite2D" parent="background"]
 position = Vector2(32, -479)
 texture = ExtResource("5_otxks")
 
-[node name="Sansss" type="Sprite2D" parent="Node2D2"]
+[node name="Sansss" type="Sprite2D" parent="background"]
 position = Vector2(32, -607)
 rotation = 3.14159
 texture = ExtResource("3_xj76u")
 
-[node name="Sansss2" type="Sprite2D" parent="Node2D2"]
+[node name="Sansss2" type="Sprite2D" parent="background"]
 position = Vector2(32, -735)
 texture = ExtResource("3_xj76u")
 
-[node name="Sansss3" type="Sprite2D" parent="Node2D2"]
+[node name="Sansss3" type="Sprite2D" parent="background"]
 position = Vector2(32.9999, -863)
 rotation = -3.14159
 texture = ExtResource("3_xj76u")
 
-[node name="Sansss5" type="Sprite2D" parent="Node2D2"]
+[node name="Sansss5" type="Sprite2D" parent="background"]
 position = Vector2(32.9999, -1119)
 rotation = -3.14159
 texture = ExtResource("3_xj76u")
 
-[node name="Sansss4" type="Sprite2D" parent="Node2D2"]
+[node name="Sansss4" type="Sprite2D" parent="background"]
 position = Vector2(32, -991)
 texture = ExtResource("3_xj76u")
 
-[node name="Chess" type="Sprite2D" parent="Node2D2"]
+[node name="Chess" type="Sprite2D" parent="background"]
 position = Vector2(32, 288)
+rotation = 3.14159
+texture = ExtResource("6_fapd6")
+
+[node name="Chess2" type="Sprite2D" parent="background"]
+position = Vector2(32.9989, 416)
 rotation = 3.14159
 texture = ExtResource("6_fapd6")
 
@@ -97,162 +104,301 @@ shape = SubResource("RectangleShape2D_4msqr")
 position = Vector2(0.83505, 35.8464)
 shape = SubResource("RectangleShape2D_8j424")
 
-[node name="Node2D" type="Node2D" parent="."]
-position = Vector2(-19, -30)
-metadata/_edit_group_ = true
+[node name="beach_plastic" type="Node2D" parent="."]
 
-[node name="plastic" parent="Node2D" instance=ExtResource("3_cca0r")]
+[node name="plastics" type="Node2D" parent="beach_plastic"]
+position = Vector2(-19, -30)
+
+[node name="plastic" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
 position = Vector2(-31, -45)
 
-[node name="plastic2" parent="Node2D" instance=ExtResource("3_cca0r")]
+[node name="plastic2" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
 position = Vector2(66, -64)
 
-[node name="plastic3" parent="Node2D" instance=ExtResource("3_cca0r")]
+[node name="plastic3" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
 position = Vector2(36, -63)
 
-[node name="plastic4" parent="Node2D" instance=ExtResource("3_cca0r")]
+[node name="plastic4" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
 position = Vector2(-6, -45)
 
-[node name="plastic5" parent="Node2D" instance=ExtResource("3_cca0r")]
+[node name="plastic5" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
 position = Vector2(-1, -102)
 
-[node name="plastic6" parent="Node2D" instance=ExtResource("3_cca0r")]
+[node name="plastic6" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
 position = Vector2(-33, -131)
 
-[node name="plastic7" parent="Node2D" instance=ExtResource("3_cca0r")]
+[node name="plastic7" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
 position = Vector2(20, -84)
 
-[node name="plastic8" parent="Node2D" instance=ExtResource("3_cca0r")]
+[node name="plastic8" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
 position = Vector2(-25, -72)
 
-[node name="plastic9" parent="Node2D" instance=ExtResource("3_cca0r")]
+[node name="plastic9" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
 position = Vector2(-31, -45)
 
-[node name="plastic10" parent="Node2D" instance=ExtResource("3_cca0r")]
+[node name="plastic10" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
 position = Vector2(66, -64)
 
-[node name="plastic11" parent="Node2D" instance=ExtResource("3_cca0r")]
+[node name="plastic11" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
 position = Vector2(53, -98)
 
-[node name="plastic12" parent="Node2D" instance=ExtResource("3_cca0r")]
+[node name="plastic12" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
 position = Vector2(20, -124)
 
-[node name="plastic13" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(-18, -170)
+[node name="plastic13" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-37, -113)
 
-[node name="plastic14" parent="Node2D" instance=ExtResource("3_cca0r")]
+[node name="plastic14" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
 position = Vector2(53, -172)
 
-[node name="plastic15" parent="Node2D" instance=ExtResource("3_cca0r")]
+[node name="plastic15" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
 position = Vector2(46, -137)
 
-[node name="plastic16" parent="Node2D" instance=ExtResource("3_cca0r")]
+[node name="plastic16" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
 position = Vector2(23, -172)
 
-[node name="plastic17" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(-9, -205)
+[node name="plastic17" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-18, -164)
 
-[node name="plastic18" parent="Node2D" instance=ExtResource("3_cca0r")]
+[node name="plastic18" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
 position = Vector2(-34, -192)
 
-[node name="plastic19" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(59, -200)
+[node name="plastic19" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(54, -190)
 
-[node name="plastic20" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(29, -219)
+[node name="plastic20" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(66, -217)
 
-[node name="plastic21" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(-35, -235)
+[node name="plastic21" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-36, -213)
 
-[node name="plastic22" parent="Node2D" instance=ExtResource("3_cca0r")]
+[node name="plastic22" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
 position = Vector2(62, -254)
 
-[node name="plastic23" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(32, -253)
+[node name="plastic23" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(69, -269)
 
-[node name="plastic24" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(-10, -235)
+[node name="plastic24" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-16, -181)
 
-[node name="plastic25" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(-25, -254)
+[node name="plastic25" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-35, -234)
 
-[node name="plastic26" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(40, -275)
+[node name="plastic26" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(45, -269)
 
-[node name="plastic27" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(69, -289)
+[node name="plastic27" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(68, -304)
 
-[node name="plastic28" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(-6, -272)
+[node name="plastic28" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(20, -291)
 
-[node name="plastic29" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(-25, -294)
+[node name="plastic29" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-9, -296)
 
-[node name="plastic30" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(23, -287)
+[node name="plastic30" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(49, -296)
 
-[node name="plastic31" parent="Node2D" instance=ExtResource("3_cca0r")]
+[node name="plastic31" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
 position = Vector2(30, -306)
 
-[node name="plastic32" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(-6, -304)
+[node name="plastic32" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(5, -315)
 
-[node name="plastic33" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(-29, -318)
+[node name="plastic33" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-18, -315)
 
-[node name="plastic34" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(32, -330)
+[node name="plastic34" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(13, -359)
 
-[node name="plastic35" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(51, -312)
+[node name="plastic35" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(49, -321)
 
-[node name="plastic36" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(-4, -319)
+[node name="plastic36" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(25, -322)
 
-[node name="plastic37" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(-36, -341)
+[node name="plastic37" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-35, -345)
 
-[node name="plastic38" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(41, -352)
+[node name="plastic38" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(51, -348)
 
-[node name="plastic39" parent="Node2D" instance=ExtResource("3_cca0r")]
+[node name="plastic39" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
 position = Vector2(68, -335)
 
-[node name="plastic40" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(-11, -341)
+[node name="plastic40" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-16, -353)
 
-[node name="plastic41" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(-31, -365)
+[node name="plastic41" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-17, -380)
 
-[node name="plastic42" parent="Node2D" instance=ExtResource("3_cca0r")]
+[node name="plastic42" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
 position = Vector2(70, -376)
 
-[node name="plastic43" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(36, -383)
+[node name="plastic43" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(18, -375)
 
-[node name="plastic44" parent="Node2D" instance=ExtResource("3_cca0r")]
+[node name="plastic44" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
 position = Vector2(-6, -365)
 
-[node name="plastic45" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(-26, -385)
+[node name="plastic45" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-36, -393)
 
-[node name="plastic46" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(71, -404)
+[node name="plastic46" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-34, -371)
 
-[node name="plastic47" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(41, -403)
+[node name="plastic47" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(53, -383)
 
-[node name="plastic48" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(-1, -385)
+[node name="plastic48" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(12, -390)
 
-[node name="plastic49" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(4, -402)
+[node name="plastic49" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(42, -398)
 
-[node name="plastic50" parent="Node2D" instance=ExtResource("3_cca0r")]
+[node name="plastic50" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
 position = Vector2(62, -356)
 
-[node name="plastic51" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(-28, -405)
+[node name="plastic51" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-9, -397)
 
-[node name="plastic52" parent="Node2D" instance=ExtResource("3_cca0r")]
-position = Vector2(-9, -414)
+[node name="plastic52" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(66, -393)
+
+[node name="plastic53" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-17, -498)
+
+[node name="plastic54" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(55, -407)
+
+[node name="plastic55" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-30, -525)
+
+[node name="plastic56" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(65, -484)
+
+[node name="plastic57" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(31, -557)
+
+[node name="plastic58" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(51, -515)
+
+[node name="plastic59" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-20, -556)
+
+[node name="plastic60" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(55, -552)
+
+[node name="plastic61" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(16, -544)
+
+[node name="plastic62" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(36, -502)
+
+[node name="plastic63" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-35, -543)
+
+[node name="plastic64" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(40, -539)
+
+[node name="plastic65" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(26, -477)
+
+[node name="plastic66" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(23, -522)
+
+[node name="plastic67" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(-25, -476)
+
+[node name="plastic68" parent="beach_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(50, -472)
+
+[node name="straws" type="Node2D" parent="beach_plastic"]
+
+[node name="straw" parent="beach_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(-23, -94)
+
+[node name="straw2" parent="beach_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(-51, -90)
+
+[node name="straw3" parent="beach_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(26, -113)
+
+[node name="straw4" parent="beach_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(8, -139)
+
+[node name="straw5" parent="beach_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(-54, -123)
+
+[node name="straw6" parent="beach_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(45, -158)
+
+[node name="straw7" parent="beach_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(-32, -180)
+rotation = -2.43473
+
+[node name="straw8" parent="beach_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(-18, -195)
+rotation = -2.74776
+
+[node name="straw9" parent="beach_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(-49, -196)
+rotation = -2.74776
+
+[node name="straw10" parent="beach_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(45, -190)
+
+[node name="straw11" parent="beach_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(22, -189)
+
+[node name="straw12" parent="beach_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(47, -353)
+
+[node name="straw13" parent="beach_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(54, -216)
+
+[node name="straw14" parent="beach_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(-57, -296)
+
+[node name="straw15" parent="beach_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(37, -309)
+
+[node name="straw16" parent="beach_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(53, -119)
+
+[node name="straw17" parent="beach_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(8, -171)
+
+[node name="straw18" parent="beach_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(45, -268)
+
+[node name="straw19" parent="beach_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(15, -216)
+
+[node name="straw20" parent="beach_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(19, -520)
+
+[node name="straw21" parent="beach_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(-58, -496)
+
+[node name="straw22" parent="beach_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(-9, -564)
+
+[node name="straw23" parent="beach_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(-51, -541)
+
+[node name="crabs" type="Node2D" parent="beach_plastic"]
+
+[node name="ocean_plastic" type="Node2D" parent="."]
+
+[node name="plastics" type="Node2D" parent="ocean_plastic"]
+
+[node name="plastic" parent="ocean_plastic/plastics" instance=ExtResource("3_cca0r")]
+position = Vector2(49, -562)
+
+[node name="straws" type="Node2D" parent="ocean_plastic"]
+
+[node name="straw16" parent="ocean_plastic/straws" instance=ExtResource("7_h4503")]
+position = Vector2(52, -495)
+
+[node name="crabs" type="Node2D" parent="ocean_plastic"]

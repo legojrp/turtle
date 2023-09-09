@@ -28,7 +28,6 @@ func _physics_process(delta):
 					
 	if position.y > -510:
 		velocity = Vector2(0,0)
-	
 	camera.global_position.x = 0
 
 	if position.y < -1250:
@@ -40,5 +39,5 @@ func death():
 	get_tree().change_scene_to_file("res://src/Static_levels/try_again.tscn")
 
 func win():
-	pass
+	get_tree().change_scene_to_file("res://src/Static_levels/end.tscn")
 
