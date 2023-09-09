@@ -3,3 +3,6 @@ res://src/title.tscn
 res://src/turtle.gd
 res://src/turtle.tscn
 res://src/testforJohn.tscn
+res://src/obstacles/plastic.tscn
+res://src/player/player.tscn
+res://src/turtle/turtle.tscn

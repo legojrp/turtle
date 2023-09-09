@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://src/Label.gd" id="2_lk1n6"]
 [ext_resource type="PackedScene" uid="uid://cgo302tyqvr51" path="res://src/player/player.tscn" id="3_1vcr7"]
 [ext_resource type="Texture2D" uid="uid://b71u5tct0w21d" path="res://src/resources/title.png" id="3_j0aak"]
-[ext_resource type="Texture2D" path="res://src/resources/walter.png" id="5_fcjwv"]
+[ext_resource type="Texture2D" uid="uid://0xmn46x4uio0" path="res://src/resources/walter.png" id="5_fcjwv"]
 
 [sub_resource type="Theme" id="Theme_2ipdn"]
 

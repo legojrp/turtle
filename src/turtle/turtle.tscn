@@ -18,3 +18,5 @@ texture = ExtResource("2_d7pp8")
 position = Vector2(-1, -8)
 shape = SubResource("RectangleShape2D_lwhnj")
 metadata/Plastic = "plastic"
+
+[node name="Camera2D" type="Camera2D" parent="."]
