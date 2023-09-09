@@ -6,7 +6,7 @@
 size = Vector2(8.15692, 15.5944)
 
 [node name="plastic" type="CharacterBody2D"]
-metadata/plastic = "plastic"
+metadata/plastic = "Plastic"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.240279, -7.93106)

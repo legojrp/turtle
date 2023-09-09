@@ -20,3 +20,8 @@
 .godot/editor/filesystem_cache8
 .godot/editor/editor_layout.cfg
 .godot/exported/133200997/file_cache
+.godot/uid_cache.bin
+.godot/uid_cache.bin
+*.bin
+*.cfg
+.godot/editor/filesystem_update4

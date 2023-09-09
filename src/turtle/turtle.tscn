@@ -20,3 +20,4 @@ shape = SubResource("RectangleShape2D_lwhnj")
 metadata/Plastic = "plastic"
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -41)

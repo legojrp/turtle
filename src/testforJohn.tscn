@@ -7,7 +7,10 @@
 
 [node name="turtle" parent="." instance=ExtResource("1_g1j2d")]
 position = Vector2(45, 31)
+motion_mode = 1
 
 [node name="plastic" parent="." instance=ExtResource("2_0k0sy")]
-position = Vector2(30, 51)
-metadata/Plastic = ""
+position = Vector2(-29.7329, -78.6818)
+motion_mode = 1
+metadata/Plastic = true
+metadata/plastic = false

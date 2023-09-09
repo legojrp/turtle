@@ -22,9 +22,9 @@ func _physics_process(delta):
 	var collision = move_and_collide(velocity * delta)
 	if collision:
 		var collider = collision.get_collider()
-		if collider.has_meta("Plastic"):
+		if collider.has_meta("plastic"):
 			death()
-	
+		
 	camera.global_position.x = 0
 			
 
