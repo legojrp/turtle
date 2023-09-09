@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwalstml2ruru"]
+
+[ext_resource type="Texture2D" uid="uid://br0hfnik05ri" path="res://src/resources/plastic.png" id="1_guw7v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_507hc"]
+size = Vector2(8.15692, 15.5944)
+
+[node name="plastic" type="CharacterBody2D"]
+metadata/plastic = "plastic"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.240279, -7.93106)
+rotation = -1.11985
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_507hc")
+metadata/plastic = "plastic"
+
+[node name="Plastic" type="Sprite2D" parent="."]
+position = Vector2(0, -8)
+texture = ExtResource("1_guw7v")
